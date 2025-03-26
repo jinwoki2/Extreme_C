@@ -2,7 +2,7 @@
 
 #include "ExtremeC_examples_chapter6_2.h"
 
-Car::Car(const char *name){
+Car::Car(const char *name) {
 	strcpy(this->name, name);
 	this->speed = 0.0;
 	this->fuel = 0.0;

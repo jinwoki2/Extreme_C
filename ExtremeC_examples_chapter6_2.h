@@ -4,7 +4,7 @@
 class Car {
 public:
 	// 생성자
-	Car(const char*);
+	Car(const char *);
 	// 소멸자
 	~Car();
 

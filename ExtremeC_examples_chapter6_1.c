@@ -12,10 +12,10 @@ void car_construct(t_car *car, const char *name)
 	// 구조체는 선언하고 초기화하지 않으면 0으로 초기화 되기 때문이다.
 }
 
-/* void car_destruct(t_car *car)
+void car_destruct(t_car *car)
 {
 	// 여기서 할 일은 없습니다.
-} */
+}
 
 void car_accelerate(t_car *car)
 {

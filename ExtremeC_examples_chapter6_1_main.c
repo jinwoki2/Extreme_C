@@ -35,8 +35,8 @@ int main(int argc, char const *argv[])
 		printf("Car has been slowed down to the speed: %f\n", car.speed);
 	}
 
-	// 객체 소멸 (주석처리를 한 이유는 객체가 stack 메모리에 할당되어 해제할 게 없기 때문)
-	// char_destruct(&car);
+	// 객체 소멸
+	car_destruct(&car);
 
 	return 0;
 }
