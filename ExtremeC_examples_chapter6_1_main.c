@@ -5,7 +5,7 @@
 int main(int argc, char const *argv[])
 {
 	// 객체 변수 만들기
-	t_car car;
+	t_car	car;
 
 	// 객체 생성
 	car_construct(&car, "Renault");
@@ -35,8 +35,8 @@ int main(int argc, char const *argv[])
 		printf("Car has been slowed down to the speed: %f\n", car.speed);
 	}
 
-	// 객체 소멸 (여기서만 주석처리)
-// 	char_destruct(&car);
+	// 객체 소멸 (주석처리를 한 이유는 객체가 stack 메모리에 할당되어 해제할 게 없기 때문)
+	// char_destruct(&car);
 
 	return 0;
 }
