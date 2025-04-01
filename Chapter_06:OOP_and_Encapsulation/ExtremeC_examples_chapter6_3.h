@@ -8,7 +8,7 @@
 # include <unistd.h>
 
 // 공개된 속성이 없는 구조체 
-// (정의가 없는 구조체 선언. 따라서 필드에 접근불가, 변수 선언불가 -> 정보은닉)
+// (정의가 없는 구조체 선언. 따라서, 필드에 접근불가 및 변수 선언불가 -> 정보은닉)
 struct list_t;
 
 // 할당 함수
@@ -16,7 +16,7 @@ struct list_t	*list_malloc(void);
 
 // 생성자 및 소멸자 함수
 void	list_init(struct list_t *);
-void	list_destory(struct list_t *);
+void	list_destroy(struct list_t *);
 
 // 공개(public) 행위 함수
 int		list_add(struct list_t *, int);
