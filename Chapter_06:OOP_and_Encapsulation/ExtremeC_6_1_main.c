@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "ExtremeC_examples_chapter6_1.h"
+#include "ExtremeC_6_1.h"
 
 /* 메인 함수 */
 int main(int argc, char const *argv[])

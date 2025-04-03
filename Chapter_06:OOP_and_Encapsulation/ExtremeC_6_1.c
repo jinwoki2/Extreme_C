@@ -1,6 +1,6 @@
 /* Car 클래스의 행위 함수에 관한 정의 */
 #include <string.h>
-#include "ExtremeC_examples_chapter6_1.h"
+#include "ExtremeC_6_1.h"
 
 // 앞의 함수에 관한 정의
 void car_construct(t_car *car, const char *name)

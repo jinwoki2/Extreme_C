@@ -1,4 +1,4 @@
-#include "ExtremeC_examples_chapter6_3.h"
+#include "ExtremeC_6_3.h"
 #include <stdlib.h>
 
 int	reverse(struct list_t *source, struct list_t *dest)
