@@ -1,0 +1,9 @@
+{
+	"files.associations": {
+		"stdlib.h": "c",
+		"_stdlib.h": "c",
+		"stdio.h": "c",
+		"extremec_7_2_player.h": "c",
+		"extremec_7_2_gun.h": "c"
+	}
+}
