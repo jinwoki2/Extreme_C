@@ -9,18 +9,18 @@ struct student_t;
 struct student_t	*student_new(void);
 
 // 생성자
-void			student_ctor(struct student_t *,
-							const char * /* first name */,
-							const char * /* last name */, 
-							unsigned int /* birth year */,
-							const char * /* student number */,
-							unsigned int /* passed credits */);
+void				student_ctor(struct student_t *,
+								const char * /* first name */,
+								const char * /* last name */, 
+								unsigned int /* birth year */,
+								const char * /* student number */,
+								unsigned int /* passed credits */);
 
 // 소멸자
-void			student_dtor(struct student_t *);
+void				student_dtor(struct student_t *);
 
 // 행위 함수
-void			student_get_student_number(struct student_t *, char *);
-unsigned int	student_get_passed_credits(struct student_t *);
+void				student_get_student_number(struct student_t *, char *);
+unsigned int		student_get_passed_credits(struct student_t *);
 
 #endif

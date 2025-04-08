@@ -5,17 +5,24 @@
 // 전방 선언
 struct person_t;
 
+typedef struct
+{
+	char			first_name[32];
+	char			last_name[32];
+	unsigned int	birth_year;
+}					person_t;
+
 // 메모리 할당자
 struct person_t	*person_new(void);
 
 // 생성자
-void	person_ctor(struct person_t *,
-					const char * /* first name */,
-					const char * /* last name */,
-					unsigned int /* birth year */);
+void			person_ctor(struct person_t *, 
+							const char * /* first name */,
+							const char * /* last name */, 
+							unsigned int /* birth year */);
 
 // 소멸자
-void	person_dtor(struct person_t *);
+void			person_dtor(struct person_t *);
 
 // 행위 함수
 void			person_get_first_name(struct person_t *, char *);
