@@ -14,7 +14,7 @@ void car_construct(car_t *car, const char *name)
 
 void car_destruct(car_t *car)
 {
-	// 여기서 할 일은 없습니다.
+	// 여기서 할 일은 없습니다. 객체가 지역변수에 할당되기 때문.
 }
 
 void car_accelerate(car_t *car)

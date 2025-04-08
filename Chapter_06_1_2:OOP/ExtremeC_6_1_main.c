@@ -2,7 +2,7 @@
 #include "ExtremeC_6_1.h"
 
 /* 메인 함수 */
-int main(int argc, char const *argv[])
+int main(void)
 {
 	/* 객체 변수 만들기 */
 	car_t	car;	// 객체의 속성을 위한 메모리를 할당하게 된다.(creation)
@@ -40,5 +40,5 @@ int main(int argc, char const *argv[])
 	// 객체 소멸
 	car_destruct(&car);
 
-	return 0;
+	return (0);
 }
