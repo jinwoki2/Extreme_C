@@ -5,13 +5,6 @@
 // 전방 선언
 struct person_t;
 
-typedef struct
-{
-	char			first_name[32];
-	char			last_name[32];
-	unsigned int	birth_year;
-}					person_t;
-
 // 메모리 할당자
 struct person_t	*person_new(void);
 
