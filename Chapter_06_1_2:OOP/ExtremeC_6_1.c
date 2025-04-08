@@ -3,7 +3,7 @@
 #include "ExtremeC_6_1.h"
 
 // 앞의 함수에 관한 정의
-void car_construct(t_car *car, const char *name)
+void car_construct(car_t *car, const char *name)
 {
 	strcpy((*car).name, name);
 	car->speed = 0.0;
@@ -12,12 +12,12 @@ void car_construct(t_car *car, const char *name)
 	// 구조체는 선언하고 초기화하지 않으면 0으로 초기화 되기 때문이다.
 }
 
-void car_destruct(t_car *car)
+void car_destruct(car_t *car)
 {
 	// 여기서 할 일은 없습니다.
 }
 
-void car_accelerate(t_car *car)
+void car_accelerate(car_t *car)
 {
 	car->speed += 0.05;
 	car->fuel -= 1.0;
@@ -25,7 +25,7 @@ void car_accelerate(t_car *car)
 		car->fuel = 0.0;
 }
 
-void car_brake(t_car *car)
+void car_brake(car_t *car)
 {
 	car->speed -= 0.07;
 	if (car->speed < 0.0)
@@ -35,7 +35,7 @@ void car_brake(t_car *car)
 		car->fuel = 0.0;
 }
 
-void car_refuel(t_car *car, double amount)
+void car_refuel(car_t *car, double amount)
 {
 	car->fuel = amount;
 }

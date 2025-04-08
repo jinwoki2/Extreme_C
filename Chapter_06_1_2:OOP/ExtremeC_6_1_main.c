@@ -5,7 +5,7 @@
 int main(int argc, char const *argv[])
 {
 	/* 객체 변수 만들기 */
-	t_car	car;	// 객체의 속성을 위한 메모리를 할당하게 된다.(creation)
+	car_t	car;	// 객체의 속성을 위한 메모리를 할당하게 된다.(creation)
 
 	/* 객체 생성 */
 	car_construct(&car, "Renault"); // 속성을 초기화 한다.(construction) 
