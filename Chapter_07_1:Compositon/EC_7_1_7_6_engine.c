@@ -6,13 +6,13 @@ typedef enum
 {
 	ON,
 	OFF
-}	state_t;
+}			state_t;
 
 typedef struct
 {
-	state_t state;
-	double temperature;
-}	engine_t;
+	state_t	state;
+	double	temperature;
+}			engine_t;
 
 // 메모리 할당자
 engine_t	*engine_new(void)
@@ -21,20 +21,20 @@ engine_t	*engine_new(void)
 }
 
 // 생성자
-void	engine_ctor(engine_t *engine)
+void		engine_ctor(engine_t *engine)
 {
 	engine->state = OFF;
 	engine->temperature = 15;
 }
 
 // 소멸자
-void	engine_dtor(engine_t *engine)
+void		engine_dtor(engine_t *engine)
 {
-	// 할 일 없음
+	// 할 일 없음: 속성에 할당해주는 게 없기 때문.
 }
 
 // 행위 함수
-void	engine_turn_on(engine_t *engine)
+void		engine_turn_on(engine_t *engine)
 {
 	if (engine->state == ON)
 		return ;
@@ -42,7 +42,7 @@ void	engine_turn_on(engine_t *engine)
 	engine->temperature = 75;
 }
 
-void	engine_turn_off(engine_t *engine)
+void		engine_turn_off(engine_t *engine)
 {
 	if (engine->state == OFF)
 		return ;
@@ -50,7 +50,7 @@ void	engine_turn_off(engine_t *engine)
 	engine->temperature = 15;
 }
 
-double	engine_get_temperature(engine_t *engine)
+double		engine_get_temperature(engine_t *engine)
 {
 	return (engine->temperature);
 }

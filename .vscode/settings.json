@@ -2,6 +2,7 @@
 	"files.associations": {
 		"extremec_8_2_person.h": "c",
 		"extremec_8_2_person_p.h": "c",
-		"ec_8_2_8_5_person.h": "c"
+		"ec_8_2_8_5_person.h": "c",
+		"ec_7_1_7_4_engine.h": "c"
 	}
 }
