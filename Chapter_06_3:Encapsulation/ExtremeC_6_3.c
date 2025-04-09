@@ -18,13 +18,13 @@ typedef struct
  ************************************/
 
 /* 리스트가 가득 찼는지 확인하는 비공개 행위 */
-bool_t	__list_is_full(list_t *list)
+static bool_t	__list_is_full(list_t *list)
 {
 	return (list->size == MAX_SIZE);
 }
 
 /* 인덱스를 확인하는 비공개 행위 */
-bool_t	__check_index(list_t *list, const size_t index)
+static bool_t	__check_index(list_t *list, const size_t index)
 {
 	return (0 <= index && index <= list->size);
 }
