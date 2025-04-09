@@ -4,20 +4,21 @@
 #define MAX_SIZE 10
 
 /* bool_t형의 별칭 정의 */
-typedef int	bool_t;
+typedef int		bool_t;
 
 /* list_t형 정의 */
 typedef struct
 {
-	size_t	size;
-	int		*items;
-}			list_t;
+	size_t		size;
+	int			*items;
+}				list_t;
 
 /************************************
  * 비공개 행위 함수 정의
  ************************************/
 
 /* 리스트가 가득 찼는지 확인하는 비공개 행위 */
+// statc은 내가 따로 붙였다. 원문에서는 없다.
 static bool_t	__list_is_full(list_t *list)
 {
 	return (list->size == MAX_SIZE);
@@ -56,7 +57,7 @@ void	list_destroy(list_t *list)
  * 할당, 생성자, 소멸자 이외의 공개 행위 함수
  *************************************/
 
-int	list_add(list_t *list, const int item)
+int		list_add(list_t *list, const int item)
 {
 	// 비공개 행위의 사용법
 	if (__list_is_full(list))
@@ -66,7 +67,7 @@ int	list_add(list_t *list, const int item)
 	return (0);
 }
 
-int	list_get(list_t *list, const int index, int *result)
+int		list_get(list_t *list, const int index, int *result)
 {
 	if (__check_index(list, index))
 	{

@@ -41,5 +41,9 @@ int	main(void)
 	/* 소멸 */
 	list_destroy(list1);
 	list_destroy(list2);
+
+	free(list1);
+	free(list2);
+
 	return (0);
 }
