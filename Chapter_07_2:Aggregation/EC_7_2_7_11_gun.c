@@ -10,13 +10,13 @@ typedef struct
 }			gun_t;
 
 /* 메모리 할당자 */
-gun_t	*gun_new(void)
+gun_t		*gun_new(void)
 {
 	return (gun_t *)malloc(sizeof(gun_t));
 }
 
 /* 생성자 */
-void	gun_ctor(gun_t *gun, int initial_bullets)
+void		gun_ctor(gun_t *gun, int initial_bullets)
 {
 	gun->bullets = 0;
 	if (initial_bullets > 0)
@@ -24,23 +24,29 @@ void	gun_ctor(gun_t *gun, int initial_bullets)
 }
 
 /* 소멸자 */
-void	gun_dtor(gun_t *gun)
+void		gun_dtor(gun_t *gun)
 {
-	// 할 일 없음
+	// 할 일 없음. 속성에 malloc을 하지 않기 때문.
 }
 
 /* 행위 함수 */
-bool_t	gun_has_bullets(gun_t *gun)
+bool_t		gun_has_bullets(gun_t *gun)
 {
 	return (gun->bullets > 0);
 }
 
-void	gun_trigger(gun_t *gun)
+void		gun_trigger(gun_t *gun)
 {
 	gun->bullets--;
 }
 
-void	gun_refill(gun_t *gun)
+void		gun_refill(gun_t *gun)
 {
 	gun->bullets = 7;
+}
+
+// 따로 넣어봄
+int			gun_remain(gun_t *gun)
+{
+	return (gun->bullets);
 }

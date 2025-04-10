@@ -1,7 +1,8 @@
-#include "ExtremeC_7_2_gun.h"
-#include "ExtremeC_7_2_player.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "EC_7_2_7_8_gun.h"
+#include "EC_7_2_7_9_player.h"
 
 int	main(void)
 {
@@ -9,6 +10,7 @@ int	main(void)
 	struct gun_t	*gun;
 	gun = gun_new();
 	gun_ctor(gun, 3);
+	printf("snick!\nremain bullets: %d\n", gun_remain(gun));		// 따로 넣어봄 
 
 	/* player 객체를 만들고 생성하기 */
 	struct player_t	*player;
@@ -20,10 +22,14 @@ int	main(void)
 
 	/* 총알이 남지 않을 때까지 쏜다 */
 	while (gun_has_bullets(gun))
+	{
 		player_shoot(player);
+		printf("Bang! remain bullets: %d\n", gun_remain(gun));		// 따로 넣어봄
+	}
 
 	/* 총을 재장전 합니다 */
 	gun_refill(gun);
+	printf("snick!\nremain bullets: %d\n", gun_remain(gun));		// 따로 넣어봄 
 
 	/* 합성 관계를 종료한다 */
 	player_drop_gun(player);
