@@ -1,4 +1,4 @@
-/* Student 클래스의 공용 인터페이스 */
+/* 접근 1: Student 클래스의 공용 인터페이스 */
 #ifndef EXTREME_C_8_2_STUDENT_H
 # define EXTREME_C_8_2_STUDENT_H
 

@@ -1,4 +1,4 @@
-/* Person 클래스에 대한 정의 */
+/* 접근 1: Person 클래스에 대한 정의 */
 #include <stdlib.h>
 #include <string.h>
 
