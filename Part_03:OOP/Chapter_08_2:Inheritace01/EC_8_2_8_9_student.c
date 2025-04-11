@@ -1,4 +1,4 @@
-/* 접근 1: Student 클래스의 비공개 정의 */
+/* 접근 1: Student 클래스의 비공개 정의 (상속의 핵심) */
 #include <stdlib.h>
 #include <string.h>
 #include "EC_8_2_8_5_person.h"
