@@ -20,11 +20,14 @@ int	main(void)
 	student_t	s;
 	student_t	*s_ptr;
 	person_t	*p_ptr;
+	person_t	*p_ptr2;	// 실험용
 
 	s_ptr = &s;
 	p_ptr = (person_t *)&s;
+	p_ptr2 = &s;	// 실험용
 	printf("Student pointer points to %p\n", (void *)s_ptr);
 	printf("Student pointer points to %p\n", (void *)p_ptr);
+	printf("Student pointer points to %p\n", (void *)p_ptr2); // 실험용으로 넣어봄
 
 	return (0);
 }

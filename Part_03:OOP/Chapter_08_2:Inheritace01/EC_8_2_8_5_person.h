@@ -1,6 +1,6 @@
 /* Person 클래스의 공용 인터페이스 */
-#ifndef EXTREME_C_8_2_PERSON_H
-# define EXTREME_C_8_2_PERSON_H
+#ifndef EC_8_2_8_5_PERSON_H
+# define EC_8_2_8_5_PERSON_H
 
 // 전방 선언
 struct person_t;

@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "ExtremeC_8_2_person.h"
-#include "ExtremeC_8_2_student.h"
+#include "EC_8_2_8_5_person.h"
+#include "EC_8_2_8_8_student.h"
 
 int	main(void)
 {

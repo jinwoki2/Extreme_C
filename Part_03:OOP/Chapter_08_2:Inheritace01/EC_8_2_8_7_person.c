@@ -3,7 +3,7 @@
 #include <string.h>
 
 // person_t는 다음 헤더 파일에 정의되어 있다.
-#include "ExtremeC_8_2_person_p.h"
+#include "EC_8_2_8_6_person_p.h"
 
 // 메모리 할당자
 person_t		*person_new(void)
