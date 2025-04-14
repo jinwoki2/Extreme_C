@@ -11,6 +11,7 @@ typedef struct
 	char			*student_number;
 	unsigned int	passed_credits;
 	// person_t가 불완전 형식이기 때문에 여기에 포인터가 있어야 한다.
+		// 이래서 불완전한 형식의 변수는 없다고 하는 건가 보다.
 	struct person_t	*person;
 }					student_t;
 
