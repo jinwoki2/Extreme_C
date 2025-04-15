@@ -6,3 +6,6 @@ Code Complete를 읽던 중 그리고 동료에 의해, 객체지향을 알아�
 EC_8_3_8_11_student.h 
 EC: ExtremeC
 EC_예제8_번호3_코드박스8_번호11_파일명.확장자
+
+따로 실험을 해보는 코드는 파일명에 Expt가 추가된다.
+Expt == Experiment

@@ -2,7 +2,7 @@
 #ifndef EC_8_4_8_21_ANIMAL_P_H
 # define EC_8_4_8_21_ANIMAL_P_H
 
-// animal_sound의 다른 morphs를
+// animal_sound의 다른 morphs(형태)를
 // 가리키는데 필요한 함수 포인터형
 typedef void		(*sound_func_t)(void *);
 
