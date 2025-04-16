@@ -15,6 +15,7 @@ typedef struct
 void			__cat_sound(void *ptr)
 {
 	animal_t	*animal;
+
 	animal = (animal_t *)ptr;
 	printf("%s: Meow\n", animal->name);
 }
