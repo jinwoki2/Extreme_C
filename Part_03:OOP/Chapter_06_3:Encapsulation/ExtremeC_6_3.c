@@ -18,7 +18,7 @@ typedef struct
  ************************************/
 
 /* 리스트가 가득 찼는지 확인하는 비공개 행위 */
-// statc은 내가 따로 붙였다. 원문에서는 없다.
+// static은 내가 따로 붙였다. 원문에서는 없다.
 static bool_t	__list_is_full(list_t *list)
 {
 	return (list->size == MAX_SIZE);
