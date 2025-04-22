@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Engine 클래스는 비공개 된다.
 #include "EC_7_1_7_3_car.h"
 
 int main(void)
 {
 	struct car_t	*car;
+
 	car = car_new();	// 자동차 객체에 대해 메모리 할당
 	car_ctor(car);		// 자동차 객체를 생성
 
