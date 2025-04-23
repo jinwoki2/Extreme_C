@@ -1,5 +1,4 @@
 /* Engine 클래스에 대한 정의 */
-
 #include <stdlib.h>
 
 typedef enum
