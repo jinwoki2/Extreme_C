@@ -1,6 +1,6 @@
 #include <string.h>
 
-#include "ExtremeC_6_2.h"
+#include "ExtremeC_6_2.hpp"
 
 Car::Car(const char *name) {
 	strcpy(this->name, name);

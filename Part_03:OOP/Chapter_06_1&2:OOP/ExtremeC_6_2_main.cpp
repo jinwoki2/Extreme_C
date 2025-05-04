@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "ExtremeC_6_2.h"
+#include "ExtremeC_6_2.hpp"
 
 int main(int argc, char** argv) {
 
