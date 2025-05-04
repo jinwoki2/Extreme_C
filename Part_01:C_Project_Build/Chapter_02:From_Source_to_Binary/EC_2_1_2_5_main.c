@@ -11,7 +11,7 @@ int	main(void)
 	array[0] = 10;
 	array[1] = 3;
 	array[2] = 5;
-	array[2] = -8;
+	array[3] = -8;
 	array[4] = 9;
 
 	// 'avg' 함수로 평균 계산하기

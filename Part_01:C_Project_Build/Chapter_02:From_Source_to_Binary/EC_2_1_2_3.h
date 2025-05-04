@@ -9,6 +9,6 @@ typedef enum e_average_type
 }			t_average_type;
 
 // 함수 선언
-double	avg(int *, int, t_average_type);
+double		avg(int *, int, t_average_type);
 
 #endif

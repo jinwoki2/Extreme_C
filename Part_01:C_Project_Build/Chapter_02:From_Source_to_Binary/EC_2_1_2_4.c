@@ -7,6 +7,8 @@ double	avg(int *array, int length, t_average_type type)
 
 	if (length <= 0 || type == NONE)
 		return (0);
+	sum = 0;
+	i = 0;
 	while (i < length)
 	{
 		if (type == NORMAL)
