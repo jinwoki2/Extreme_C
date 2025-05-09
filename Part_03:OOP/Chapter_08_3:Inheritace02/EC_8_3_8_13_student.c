@@ -26,7 +26,7 @@ void				student_ctor(student_t *student,
 								const char *first_name,
 								const char *last_name,
 								unsigned int birth_year,
-								const char * student_number,
+								const char *student_number,
 								unsigned int passed_credits)
 {
 	// 부모 객체에 대한 메모리 할당하기
