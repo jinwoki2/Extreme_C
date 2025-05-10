@@ -1,4 +1,4 @@
-#ifndef TEST_DUCK__H
+#ifndef TEST_DUCK_H
 # define TEST_DUCK_H
 
 struct s_duck;

@@ -1,13 +1,13 @@
-SRCS	=	test_animal.c \
-			test_cat.c \
-			test_duck.c \
+SRCS	=	test_animal.c	\
+			test_cat.c		\
+			test_duck.c		\
 			test_main.c
 
 OBJS	=	$(SRCS:.c=.o)
 
-CC	=	cc
+CC		=	cc
 CFLAGS 	= 	-Wall -Wextra -Werror -I. -g -gdwarf-4
-NAME	=	test.out
+NAME	=	a.out
 
 all: $(NAME)
 

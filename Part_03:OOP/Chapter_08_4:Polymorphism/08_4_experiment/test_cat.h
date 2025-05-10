@@ -1,4 +1,4 @@
-#ifndef TEST_CAT__H
+#ifndef TEST_CAT_H
 # define TEST_CAT_H
 
 struct s_cat;
