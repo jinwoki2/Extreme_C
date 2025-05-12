@@ -19,8 +19,8 @@ int	main(void)
 	duck_ctor(duck, sound);
 
 	animal_sound(animal);
-	cat_sound(cat);
-	duck_sound(duck);
+	animal_sound((struct s_animal *)cat);
+	animal_sound((struct s_animal *)duck);
 
 	return (0);
 }

@@ -1,12 +1,13 @@
 #include "test_cat.h"
 #include "test_animal.h"
+#include "test_animal_p.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 typedef struct s_cat
 {
-	struct s_animal	*animal;
+	t_animal		animal;
 	char			*sound;
 }					t_cat;
 
@@ -17,8 +18,7 @@ t_cat				*cat_new(void)
 
 void				cat_ctor(t_cat *cat, char *sound)
 {
-	cat->animal = animal_new();
-	animal_ctor(cat->animal, sound);
+	animal_ctor((t_animal *)cat, sound);
 	cat->sound = (char *)malloc(strlen(sound) * sizeof(char));
 	strcpy(cat->sound, sound);
 }

@@ -1,12 +1,8 @@
 #include "test_animal.h"
+#include "test_animal_p.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-typedef struct s_animal
-{
-	char		*sound;
-}				t_animal;
 
 t_animal		*animal_new(void)
 {
