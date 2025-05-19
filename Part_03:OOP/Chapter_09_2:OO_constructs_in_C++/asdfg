@@ -1,0 +1,19 @@
+_rect_area:                             ; @rect_area
+        .cfi_startproc
+; %bb.0:
+        sub     sp, sp, #16
+        .cfi_def_cfa_offset 16
+        str     x0, [sp, #8]
+        ldr     x8, [sp, #8]
+        ldr     w8, [x8]
+        ldr     x9, [sp, #8]
+        ldr     w9, [x9, #4]
+        mul     w0, w8, w9
+        add     sp, sp, #16
+        ret
+        .cfi_endproc
+                                        ; -- End function
+        .globl  _main                           ; -- Begin function main
+        .p2align        2
+_main:                                  ; @main
+        .cfi_startproc
