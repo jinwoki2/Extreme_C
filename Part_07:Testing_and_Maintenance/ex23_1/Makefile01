@@ -1,0 +1,25 @@
+CC = gcc
+
+build: prereq out/main.o out/libcalc.a
+	${CC} -Lout -lcalc out/main.o -o out/ex23_1.out
+
+prereq:
+	mkdir -p out
+
+out/libcalc.a : out/add.o out/multiply.o out/substract.o
+	ar rcs out/libcalc.a out/add.o out/multiply.o out/substract.o
+
+out/main.o: exec/main.c calc/calc.h
+	${CC} -c -Icalc exec/main.c -o out/main.o
+
+out/add.o: calc/add.c calc/calc.h
+	${CC} -c calc/add.c -o out/add.o
+
+out/substract.o: calc/substract.c calc/calc.h
+	${CC} -c calc/substract.c -o out/substract.o
+
+out/multiply.o: calc/multiply.c calc/calc.h
+	${CC} -c calc/multiply.c -o out/multiply.o
+
+clean:
+	rm -rfv out
