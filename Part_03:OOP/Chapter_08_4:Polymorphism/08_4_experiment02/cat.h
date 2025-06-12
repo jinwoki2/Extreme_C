@@ -1,6 +1,6 @@
 /* Cat 클래스의 공용 인터페이스 */
-#ifndef EC_8_4_8_23_CAT_H
-# define EC_8_4_8_23_CAT_H
+#ifndef CAT_H
+# define CAT_H
 
 // 전방 선언
 struct cat_t;

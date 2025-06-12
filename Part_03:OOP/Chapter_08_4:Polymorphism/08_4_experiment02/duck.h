@@ -1,6 +1,6 @@
 /* Duck 클래스의 공용 인터페이스 */
-#ifndef EC_8_4_8_25_DUCK_H
-# define EC_8_4_8_25_DUCK_H
+#ifndef DUCK_H
+# define DUCK_H
 
 // 전방 선언
 struct duck_t;

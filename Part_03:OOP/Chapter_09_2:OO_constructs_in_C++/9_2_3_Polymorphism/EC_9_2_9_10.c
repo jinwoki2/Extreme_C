@@ -43,17 +43,17 @@ void	*parent_non_virtual_func_2(t_parent *parent, ...) { /* code */ };
 void	*parent_non_virtual_func_m(t_parent *parent, ...) { /* code */ };
 
 // 실제 공용 가상 행위 함수
-void	*paren_func_1(t_parent *parent, ...)
+void	*parent_func_1(t_parent *parent, ...)
 {
 	return (parent->func_1)(parent/* , ... */);
 }
 
-void	*paren_func_2(t_parent *parent, ...)
+void	*parent_func_2(t_parent *parent, ...)
 {
 	return (parent->func_2)(parent/* , ... */);
 }
 
-void	*paren_func_n(t_parent *parent, ...)
+void	*parent_func_n(t_parent *parent, ...)
 {
 	return (parent->func_n)(parent/* , ... */);
 }
