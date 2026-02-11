@@ -23,7 +23,7 @@ ft_printf(bouns), minishell에 대해서는 고려해볼 수도 있습니다만,
 
 다만 g++ 기반 C++를 깊게 공부하고 싶으시거나, C로 TDD를 하고 싶으시거나, 대형 프로젝트를 하실 생각이라면 의미가 있습니다.
 Extreme_C에서 가르치는 C의 컴파일 결과가 g++로 CPP를 컴파일 했을 때의 결과가 매우 유사하기 때문에 도움이 될 것 입니다.
-Testable Code(테스트 가능한 코드)에서 중요한 것은 Dependency Injection(의존성 주입)인데 C의 OOP가 이를 하기 유용합니다. 
+Testable Code(테스트 가능한 코드)에서 중요한 것은 Dependency Injection(의존성 주입)인데 C의 OOP는 이를 하기가 유용합니다. 
 대형 프로젝트에서는 실수와 반복을 줄이기 위해 클래스를 만드는 게 편하실 겁니다.
 
 저는 간이 gc(garbage collector)와 errhdlr(error handler)라는 클래스를 만드는데 가장 많이 활용되었습니다. (추후에 올려보도록 하죠)
